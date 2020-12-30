@@ -12,7 +12,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="./public/logo-white.png" alt="Eternal Return Logo" width="300" height="150">
+    <img src="./erbd/public/logo-white.png" alt="Eternal Return Logo" width="300" height="150">
   </a>
 
   <h2 align="center">Eternal Return: Black Survival stat database</h2>
@@ -62,7 +62,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![ER:DB logo](./public/logo-black.png)
+![ER:DB logo](./erbd/public/logo-black.png)
 
 Thanks to Nimble Neuron's constant effort to support the game, they have released the API that can be used to search their in-game datas such as user history, rank, and in-game-weapon stats
 
