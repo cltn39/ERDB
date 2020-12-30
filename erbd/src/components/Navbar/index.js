@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <Link className="navbar-brand" to="/">
-        Pupster
+        LumiaDB
       </Link>
       <div>
         <ul className="navbar-nav">
@@ -20,7 +20,7 @@ function Navbar() {
                   : "nav-link"
               }
             >
-              About
+              Main
             </Link>
           </li>
           <li className="nav-item">
@@ -28,7 +28,7 @@ function Navbar() {
               to="/discover"
               className={window.location.pathname === "/discover" ? "nav-link active" : "nav-link"}
             >
-              Discover
+              build
             </Link>
           </li>
           <li className="nav-item">
@@ -36,7 +36,7 @@ function Navbar() {
               to="/search"
               className={window.location.pathname === "/search" ? "nav-link active" : "nav-link"}
             >
-              Search
+              items
             </Link>
           </li>
         </ul>
