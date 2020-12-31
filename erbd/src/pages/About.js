@@ -26,14 +26,19 @@ function About() {
     e.preventDefault();
 
     setClickSearch(true);
-    // API.getDogsOfBreed(playerName)
-    // .then((res) => {
-    //   if (res.data.status === "error") {
-    //     throw new Error(res.data.message);
-    //   }
-    //   this.setError(res.data.message);
-    // })
-    // .catch((err) => this.setError(err.message));
+
+    console.log(error)
+    console.log(playerName)
+    console.log(results)
+
+    API.getDogsOfBreed(playerName)
+    .then((res) => {
+      if (res.data.status === "error") {
+        throw new Error(res.data.message);
+      }
+      this.setError(res.data.message);
+    })
+    .catch((err) => setError(err.message));
   };
 
 
@@ -43,19 +48,19 @@ function About() {
         <h1>ER:DB</h1>
         <h2>Simple serach</h2>
         <br/>
+        <SearchForm
+          onSearch={onSearch}
+          handleFormSubmit={onSearch}
+          handleInputChange={handleChange}
+          search={playerName}
+          redirect={clickSearch && <Redirect push to={`/search/${playerName}`}/>}
+        />
         <Alert
             type="danger"
             style={{ opacity: error ? 1 : 0, marginBottom: 10 }}
           >
             {error}
           </Alert>
-        <SearchForm
-          onSearch={onSearch}
-          handleFormSubmit={onSearch}
-          handleInputChange={handleChange}
-          search={playerName}
-          redirect={clickSearch && <redirect push to={`/search/${playerName}`}/>}
-        />
       </Hero>
       <Container style={{ marginTop: 30 }}>
         <Row>
