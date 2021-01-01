@@ -7,7 +7,7 @@ import Alert from "../components/Alert";
 
 class Search extends Component {
   state = {
-    search: "Player name",
+    search: "",
     breeds: [],
     results: [],
     error: ""
@@ -32,6 +32,8 @@ class Search extends Component {
           throw new Error(res.data.message);
         }
         this.setState({ results: res.data.message, error: "" });
+        console.log(res.data.message)
+        console.log(this.state.results)
       })
       .catch(err => this.setState({ error: err.message }));
   };
