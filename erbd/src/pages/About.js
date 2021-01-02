@@ -71,7 +71,7 @@ function About() {
     <div>
       <Hero backgroundImage="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/clans/34875433/322249281e9d7c77e4372e6edb241091fda48ff8.png">
         <h1>ER:DB</h1>
-        <h2>Simple serach</h2>
+        <h2>Simple player match history search</h2>
         <br/>
         <SearchForm
           onSearch={onSearch}
