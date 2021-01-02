@@ -7,15 +7,28 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <Link className="navbar-brand" to="/">
-      <img
+        <img
           src="https://w.namu.la/s/5e56dae1e75c283329f58c53110df3d7b418a1e44cc93615bee3fcf592d1cae2f861027a6066e24c28eae90a8ec94e958913c7cad4f238d364649b538e04f730c3df46b3401087e20dcef11e216f5deb63b17fa21deca6a0832a9bc6ae007a3f"
           width="110"
           height="50"
           alt=""
-        />  LumiaDB
+          // className="d-inline-block"
+        />{" "}
+        LumiaDB
       </Link>
-      <div>
-        <ul className="navbar-nav">
+      <button
+        className="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span className="navbar-toggler-icon"></span>
+      </button>
+      <div className="collapse navbar-collapse" id="navbarNav">
+        <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
           <li className="nav-item">
             <Link
               to="/"
