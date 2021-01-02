@@ -99,7 +99,7 @@ This is an example of how to list things you need to use the software and how to
 1. You will need an API key from Nimble Neuron first.
 2. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/cltn39/ERDB.git
    ```
 3. Install NPM packages
    ```sh
@@ -138,8 +138,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
 Project Link: [https://github.com/cltn39/ERBD](https://github.com/cltn39/ERBD)
 
 
@@ -173,3 +171,8 @@ Project Link: [https://github.com/cltn39/ERBD](https://github.com/cltn39/ERBD)
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/webdev-chisoo-chris-song/
 [product-screenshot]: images/screenshot.png
+
+<br />
+
+  <p align="center">Created with lots of ❤️ by Chris Song <2021> </p>
+</p>
