@@ -3,7 +3,6 @@ import Hero from "../components/Hero";
 import API from "../utils/API";
 import Container from "../components/Container";
 import SearchForm from "../components/SearchForm";
-import SearchResults from "../components/SearchResults";
 import Alert from "../components/Alert";
 import Row from "../components/Row";
 import Col from "../components/Col";
@@ -95,7 +94,7 @@ function About() {
         </Row>
         <Row>
           <Col size="md-6">
-          <SearchResults results={results} />
+            <h2>ER:BS news</h2>
           <Card image={image} handleBtnClick={handleBtnClick} />
           <Card image={image} handleBtnClick={handleBtnClick} />
           </Col>
