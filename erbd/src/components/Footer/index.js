@@ -4,7 +4,7 @@ import "./style.css";
 function Footer() {
   return (
     <footer className="footer">
-      <span>LumiaDB 2020©</span>
+      <span>Made with lots of ❤️ by LumiaDB 2021©</span>
     </footer>
   );
 }
