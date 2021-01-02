@@ -4,8 +4,8 @@
   width: 50px;
   position: absolute;
   border: none;
-  bottom: 10%;
-  color: #FFF;
+  bottom: 0%;
+  color: #fccd33;
   font-size: 24px;
   cursor: pointer;
   font-family: FontAwesome;
@@ -14,24 +14,24 @@
 
 .pass {
   left: 1%;
-  background: #E53935;
+  background: none;
 }
 
 .pass::after {
-  content: "\f165";
+  content: "\f1b7";
 }
 
 .pick {
   right: 1%;
-  background: #43A047;
+  background:none;
 }
 
 .pick::after {
-  content: "\f164";
+  content: "\f054";
 }
 
 .pick:hover::after, .pass:hover::after {
-  animation: iconBounce .57s 1;
+  animation: iconBounce .57s infinite;
 }
 
 @keyframes iconBounce {
