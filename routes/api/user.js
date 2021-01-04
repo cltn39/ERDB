@@ -11,7 +11,7 @@ router
   .route("/:userNum")
   .get(usersController.findUserGames)
 
-// Matches with "/api/user/:userNum/seasonId"
+// Matches with "/api/user/:userNum/:seasonId"
 router
   .route("/:userNum/:seasonId")
   .get(usersController.findUserStats)
