@@ -3,7 +3,7 @@ const express = require("express");
 
 const PORT = process.env.PORT || 3001;
 const app = express();
-const apiRoutes = require("./routes/apiRoutes")
+const routes = require("./routes")
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -13,8 +13,8 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
-// Define API routes here
-app.use("/api", apiRoutes)
+// Add routes, both API and view
+app.use(routes)
 
 
 app.listen(PORT, () => {
