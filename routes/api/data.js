@@ -3,7 +3,7 @@ const usersController = require("../../controllers/usersController");
 
 // Matches with "/api/data"
 router
-  .route("/hash")
+  .route("/")
   .get(usersController.findData)
 
 module.exports = router;
