@@ -2,6 +2,7 @@ require('dotenv').config()
 const axios = require("axios");
 
 const headers = {'x-api-key' : process.env.API_KEY}
+
 // Defining methods for the playerController
 module.exports = {
   findByNickName: function(req, res) {
@@ -41,10 +42,12 @@ module.exports = {
         .catch(err => res.status(422).json(err));
   },
   findData: function(req, res) {
-    axios.get(`https://open-api.bser.io/v1/data/${req.query}`, {
-      headers
+    axios.get(`https://open-api.bser.io/v1/data/${req.body}`, {
+      headers,
     })
-        .then(response => res.json(response.data))
-        .catch(err => res.status(422).json(err));
+    .then(response => res.json(response.data))
+    .catch(err => res.status(422).json(err));
+    console.log(req.body)
+    
   }
 };
