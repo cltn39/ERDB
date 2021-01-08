@@ -1,9 +1,8 @@
 const express = require("express");
-
-
 const PORT = process.env.PORT || 3001;
 const app = express();
-const routes = require("./routes")
+const routes = require("./routes");
+const graphqlController = require('./controllers/graphqlController');
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -14,8 +13,8 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // Add routes, both API and view
-app.use(routes)
-
+app.use(routes);
+app.use(graphqlController);
 
 app.listen(PORT, () => {
   console.log(`🌎 ==> API server now on port ${PORT}!`);
