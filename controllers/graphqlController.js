@@ -24,7 +24,7 @@ type hash {
 const rootResolver = {
   helloWorld: "hello world",
   users: res => usersController.findUserGames(res.userNum),
-  data: res => usersController.findData(res.this.data)
+  data: () => usersController.findData(this.data)
 };
 
 const graphql = graphqlHTTP({
