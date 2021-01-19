@@ -11,7 +11,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/cltn39/ERDB/edit/main/README.md">
     <img src="./erbd/public/logo-white.png" alt="Eternal Return Logo" width="300" height="150">
   </a>
 
