@@ -68,7 +68,8 @@ Thanks to Nimble Neuron's constant effort to support the game, they have release
 
 User Story:
 * As an user can now search more detailed history of their favorite game data.
-* User friendly, and much more features to come soon.
+* As an user, the application's features are easy to understand and utilize.
+* As an user, you can build the routes outside of the game and easy to import the plan.
 
 
 ### Built With
